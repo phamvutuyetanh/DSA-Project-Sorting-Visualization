@@ -222,7 +222,7 @@ button{
 
 }
 
-/* #Titlename {
+#Titlename {
     
     text-shadow: 5px 2px 2px black; 
     position: relative;
@@ -238,5 +238,5 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-  } */
+  }
 
