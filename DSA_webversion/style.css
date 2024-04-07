@@ -1,0 +1,242 @@
+/* .Information {
+    font-style: italic;
+} */
+/*tieu de cac sort*/
+h1 {color:#ffdaba;
+    font-size: 40px;
+    text-align: center; /* Set the position to absolute */
+    height: 50px;
+    width: 800px;
+    margin-top: 80px;
+  
+}
+/* chu Description*/
+#Tieude{
+
+    text-shadow: 5px 2px 2px black; 
+    color: #ffdaba;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50;
+    
+}
+/*Information about web*/
+h3.Web{
+    color: #2e2b26;
+    font-style: italic;
+    font-size: 50px;
+    margin-left: 20 px;
+    border: 5px solid #000000;
+    text-align: center;
+    background-color: rgb(200, 190, 174);
+}
+
+
+/* Objectives + How to use */
+ol{
+    color: #0a181f;
+    font-style:inherit;
+    font-size: 38px;
+    margin-left: 80px;
+    background-color: rgb(221, 200, 172);
+
+}
+
+/*Link sort*/
+a{
+    color: #ffedba;
+    font-size: 40.75px;
+
+    margin-left: 300px;
+    /* border: 0px solid #b09b9b; Set a 2px solid black border around the content */
+    background-color: rgba(46,43,38, 0.5);
+    /* text-shadow: 7px 5px 10px rgb(73, 75, 94);  */
+}
+
+/*sort description*/
+#Content{
+    text-shadow: 7px 5px 10px rgb(46,43,38); 
+    color: #ccebff;
+    font-size: 35px;
+    text-align: center;
+    padding : 15px;
+    background-color: rgba(46,43,38, 0.5);
+    -webkit-text-stroke: 0.3px rgb(255, 255, 255); /* width and color of stroke */
+}
+/*Step1
+Step2*/
+ul{
+    color: rgb(10,24,31);
+    font-style: bold;
+    font-size: 27px;
+    margin-left: 80px;
+    
+}
+.Member{
+    color: rgb(10,24,31);
+    font-style: italic;
+    font-size: 32px;
+    background-color: rgba(214,195,166, 1);
+
+}
+/*Numbers of swap*/
+h3{
+    font-style: bold;
+    font-size: 25px; 
+}
+
+/*Information about Team members*/
+.second {
+    color: #2e2b26;
+    font-style: italic;
+    font-size: 50px;
+    margin-left: 20 px;
+    border: 5px solid #000000;
+    text-align: center;
+    background-color: rgb(200, 190, 174);
+}
+/*Description Information about Team members*/
+p{
+    color: #ffeedf;
+    font-size: 28px; 
+    margin-left: 80px;
+}
+/*select box*/
+select{
+    width: 100px;
+    height: 40px;
+    font-size: 15px; 
+    margin-left: 60px;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: #ffecdc;
+}
+/*Create chart/ sort*/
+button{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    margin-left: 60px;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: #ffecdc;
+}
+
+.detail{
+    width : 800;
+    height : 400;
+    background-color:grey
+}
+
+#BigO{
+    width: 700px;
+    height: 40px;
+    font-size: 10px;
+    margin-left: 40px;
+    margin-top: 40px;
+
+}
+/*kich thuoc cai khung*/
+.item {
+    border-radius: 130px;
+    border: 10px solid #605a3f;
+    height: 950px;
+    width: 800;
+    margin-left: 20px;
+}
+/*vi tri cai khung*/
+.container{
+    display: grid;
+    grid-template-columns: 800px 800px;
+
+}
+
+/* 
+.item-2 {
+    background-image: url('https://i.pinimg.com/originals/63/a1/01/63a101a9dc58431f9e645afaccc18e5b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.item-select2 {
+    background-image: url('https://i.pinimg.com/564x/0c/fe/b8/0cfeb879b4f8f9da15add409e1d13ddd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.item-insert2{
+    background-image: url('https://i.pinimg.com/564x/21/70/3a/21703a31d8693986a5234e66dd512503.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.item-quick2 {
+    background-image: url('https://i.pinimg.com/564x/6e/52/47/6e5247dfaa148ffdf581f0862a490eee.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.item-merge2 {
+    
+    background-image: url('https://i.pinimg.com/564x/1a/41/4f/1a414f80b8ff2d5078dead078c96a4d5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.item-shell2{
+    background-image: url('https://i.pinimg.com/564x/20/16/98/201698ccba4abed5efc67329231d9d64.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+#col1{
+    background-color:#d6c3a6;
+} */
+.Titlepage {
+    width: 1850px;
+    height: 500px;
+    background-image: url(backgroundtitle.jpeg);
+    /* // 
+    https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDbhqFGNAA_po7Fckvht6Wwgzd_XXAUmNL3A&usqp=CAU
+    https://i.pinimg.com/originals/99/29/dd/9929ddc59f5a40e6cc6a9606b0f4e325.jpg
+    */
+    /* min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+  
+    /* opacity: 0.35;
+    filter: blur(5px); */
+    background-size: cover; 
+    /* Set the position to absolute */
+}
+.Titlepage::before {
+    content: '';
+    background-image: inherit;
+     background-repeat: no-repeat;
+    background-size: cover; 
+    /* background-position: center; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1600px;
+    height: 500px;
+    
+     filter: blur(200px); 
+    /* opacity: 0.5; */
+
+}
+
+/* #Titlename {
+    
+    text-shadow: 5px 2px 2px black; 
+    position: relative;
+    text-align: center;
+    color:  #ffccaa;
+    font-size: 140px;
+    top: 430;
+    
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/85/24/89/852489cbad1b3eb5aec1c4dabd24877f.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  } */
+

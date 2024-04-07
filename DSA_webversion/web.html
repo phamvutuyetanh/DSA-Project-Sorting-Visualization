@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Visualization web</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="js/math.js"></script>
+  <script src="js/column.js"></script>
+  <script src="js/Basesort.js"></script>
+  <script src="js/Selectionsort.js"></script>
+  <script src="js/Bubblesort.js"></script>
+  <script src="js/Shellsort.js"></script>
+  <script src="js/Insertionsort.js"></script>
+  <script src="js/Mergesort.js"></script>
+  <script src="js/QuickSort.js"></script>
+
+
+</head>
+ 
+<body>
+  
+  <div class = "Information">
+    <div class = "Titlepage">
+      <h1 id = "Titlename"> SORTING ALGORITHM WEBSITE</h1>
+    </div>
+   
+    <h3 class="Web" > About Page </h3>
+    <ol>
+      <li> Objectives
+        <p> 
+          <ul class = "Obj">
+            <li>Understanding how different sorting algorithms work</li>
+            <li>Allowing users to visualize the step-by-step process of each algorithm</li>
+          </ul>
+        </p>
+      </li>
+      <li> Guidelines </li>
+      <ul class = "Step">
+        <li>Step 1: Choose the number of items you want to sort. Then click "Create chart".</li>
+        <li> Step 2: Select the speed with "1x" being normal speed, "2x" being twice as fast, and "3x" being three times as fast.</li>
+        <li> Step 3: Click "Sort" button to see how that sorting algorithm sort.</li>
+      </ul>
+    </ol>
+    <h3 class="second">
+      About Us
+    </h3>
+    <p>
+      <ul class = "Member">
+        <li>Pham Vu Tuyet Anh - ITDSIU21073</li>
+        <li>Dinh Thi Thanh Hang - ITDSIU21083</li>
+        <li>Le Thi Tuyet My - ITDSIU21005</li>
+        <li>Dinh Vu Ngoc Linh - ITDSIU21095</li>
+      </ul>
+    </p>
+  </div>
+<h1> BUBBLE SORT ALGORITHM </h1>
+  <div class = "container-1 container">
+    <div class="item-1 item" id = "col1">
+      <!-- <p class = "bubble-button"> Method:  -->
+        <div id = "detail">
+        <button onClick="create(this)" id="bubblesort">Create chart</button>
+        <button onClick="sort(this)" id="bubblesort"> Sort </button>
+      <!-- </p> -->
+      <!-- <p class = "bubble-select"> How many items that you aim : -->
+        <select id = "select1A">   
+          <option value="10"> 10 items</option>
+          <option value="20"> 20 items</option>
+          <option value="30"> 30 items</option>
+      </select>
+    <!-- </p>
+    <p > Please chose speed  -->
+      <select id = "select1B">   
+        <option value="500"> 1x </option>
+        <option value="100"> 2x </option>
+        <option value="40"> 3x </option>
+    </select>
+        </div>
+        <div id = "BigO"> 
+          <h3 id = "Big0Bubble"> Numbers of swaps: .................................................................. Numbers of comparisions: ............................................................</h3>
+        </div>
+        
+  <!-- </p> -->
+    <canvas id = "myCanvasBubble" width="700" height="700"></canvas>
+  </div>
+  <div class = "item-2 item" id = "col2"> 
+    <h2 id = "Tieude">Description</h2>
+    <h2 id = "Content">
+      Bubble Sort is the simplest sorting algorithm that repeatedly swaps adjacent elements if they're in the wrong order. It usually begins from the left and compares adjacent elements, and the higher one is placed on the right side.
+    </h2>
+    <h2 id = "Content">
+      Time Complexity: O (N<sup>2</sup>)
+    </h2>
+    <a href="https://www.geeksforgeeks.org/bubble-sort/"> Learn more </a>
+  </div>
+  </div>
+  
+
+  <h1> SELECTION SORT ALGORITHM </h1>
+  <div class = "container-2 container">
+    <div class="item-select1 item" id = "col1">
+      <!-- <p class = "selection-button"> Method:  -->
+        <button onClick="create(this)" id="selectionsort">Create chart </button>
+        <button onClick="sort(this)" id="selectionsort"> Sort </button>
+      <!-- </p>
+      <p class = "Selection-select">How many items that you aim : -->
+        <select id = "select2A">   
+          <option value="10"> 10 items</option>
+          <option value="20"> 20 items</option>
+          <option value="30"> 30 items</option>
+      </select>
+    <!-- </p>
+    <p > Please chose speed  -->
+      <select id = "select2B">   
+        <option value="500"> 1x </option>
+        <option value="100"> 2x </option>
+        <option value="40"> 3x </option>
+    </select>
+  <!-- </p> -->
+  <div id = "BigO"> 
+    <h3 id = "Big0Select"> Numbers of swaps: ................................................................ Numbers of comparisions: ..........................................................</h3>
+  </div>
+
+    <canvas id = "myCanvasSelection" width="700" height="700"></canvas>
+    <!-- <script src="js/scriptS.js"></script> -->
+  </div>
+  <div class = "item-select2 item" id = "col2"> 
+    <h2 id= "Tieude">Description</h2>
+    <h2 id = "Content">
+      Selection Sort is a simple and efficient sorting algorithm that repeatedly selects the smallest (or largest) element from the unsorted portion of the list and swaps it with the first element of the unsorted part. This process is repeated for the remaining unsorted portion until the entire list is sorted.
+    </h2>
+    <h2 id = "Content">
+      Time Complexity: O (N<sup>2</sup>)
+    </h2>
+    <a href="https://www.geeksforgeeks.org/selection-sort/"> Learn more </a>
+  </div>
+  
+  </div>
+ 
+  <h1> INSERTION SORT ALGORITHM </h1>
+  <div class = "container-3 container">
+    <div class="item-insert1 item" id = "col1">
+      <!-- <p class = "insert-button"> Method:  -->
+        <button onClick="create(this)" id="insertionsort">Create chart </button>
+        <button onClick="sort(this)" id="insertionsort"> Sort </button>
+      <!-- </p>
+      <p class = "insert-select">How many items that you aim : -->
+        <select id = "select3A" >   
+          <option value="10"> 10 items</option>
+          <option value="20"> 20 items</option>
+          <option value="30"> 30 items</option>
+      </select>
+    <!-- </p>
+    <p > Please chose speed  -->
+      <select id = "select3B">   
+        <option value="500"> 1x </option>
+        <option value="100"> 2x </option>
+        <option value="40"> 3x </option>
+    </select>
+  <!-- </p> -->
+  <div id = "BigO"> 
+    <h3 id = "Big0Insert"> Numbers of swaps: ................................................................. Numbers of comparisions: ...........................................................</h3>
+  </div>
+    <canvas id = "myCanvasInsertion" width="700" height="700"></canvas>
+    <!-- <script src="js/scriptI.js"></script> -->
+  </div>
+  <div class = "item-insert2 item" id = "col2"> 
+    <h2 id = "Tieude">Description</h2>
+    <h2 id = "Content">
+      Insertion sort is a sorting algorithm that places an unsorted element at its suitable place in each iteration. Insertion sort works similarly to how we sort cards in our hand in a card game. We assume that the first card is already sorted; then, we select an unsorted card. If the unsorted card is greater than the card in hand, it is placed on the right; otherwise, it is placed on the left. In the same way, other unsorted cards are taken and put in their right place.
+    </h2>
+    <h2 id = "Content">
+      Time Complexity: O (N<sup>2</sup>)
+    </h2>
+    <a href="https://www.geeksforgeeks.org/insertion-sort/"> Learn more </a>
+  </div>
+  </div>
+
+
+
+  <h1> QUICK SORT ALGORITHM</h1>
+  <div class = "container-4 container">
+    <div class="item-quick1 item" id = "col1">
+      <!-- <p class = "quick-button"> Method:  -->
+        <button onClick="create(this)" id="quicksort">Create chart </button>
+        <button onClick="sort(this)" id="quicksort"> Sort </button>
+      <!-- </p>
+      <p class = "quick-select">How many items that you aim : -->
+        <select id = "select4A">   
+          <option value="10"> 10 items </option>
+          <option value="20"> 20 items </option>
+          <option value="30"> 30 items </option>
+      </select>
+    <!-- </p>
+    <p > Please chose speed  -->
+      <select id = "select4B">   
+        <option value="500"> 1x </option>
+        <option value="100"> 2x </option>
+        <option value="40"> 3x </option>
+    </select>
+  <!-- </p> -->
+  <div id = "BigO"> 
+    <h3 id = "Big0Quick"> Numbers of swaps: ........................................................................... Numbers of comparisions after each parition: .............................. Total comparisions: .........</h3>
+  </div>
+    <canvas id = "myCanvasQuick" width="700" height="700"></canvas>
+    <!-- <script src="js/scriptQ.js"></script> -->
+  </div>
+  <div class = "item-quick2 item" id = "col2"> 
+    <h2 id = "Tieude" >Description</h2>
+    <h2 id = "Content">
+      Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays,
+       according to whether they are less than or greater than the pivot
+    </h2>
+    <h2 id = "Content">
+      Time Complexity: O (N*logN)
+    </h2>
+    <a href="https://www.geeksforgeeks.org/quick-sort/"> Learn more </a>
+  </div>
+  </div>
+
+  <h1> MERGE SORT ALGORITHM</h1>
+  <div class = "container-5 container">
+    <div class="item-merge1 item" id = "col1">
+        <button onClick="create(this)" id="mergesort">Create chart </button>
+        <button onClick="sort(this)" id="mergesort"> Sort </button>
+        <select id = "select5A">   
+          <option value="10"> 10 items</option>
+          <option value="20"> 20 items</option>
+          <option value="30"> 30 items</option>
+        </select>
+      <select id = "select5B">   
+        <option value="500"> 1x </option>
+        <option value="100"> 2x </option>
+        <option value="40"> 3x </option>
+    </select>
+    <div id = "BigO"> 
+      <h3 id = "Big0Merge"> Total of copies: ....................................................................... Numbers of comparisions in each merge sub: ................................. Total comparisions:...................</h3>
+    </div>
+      <canvas id = "myCanvasMerge" width="700" height="700"></canvas>
+      <!-- <script src="js/scriptM.js"></script> -->
+    </div>
+    <div class = "item-merge2 item" id = "col2"> 
+      <h2 id = "Tieude">Description</h2>
+      <h2 id = "Content">
+        Merge sort is defined as a sorting algorithm that works by dividing an array into smaller subarrays,
+         sorting each subarray, and then merging the sorted subarrays back together to form the final sorted array.
+      </h2>
+      <h2 id = "Content">
+        Time Complexity: O (N*logN)
+      </h2>
+      <a href="https://www.geeksforgeeks.org/merge-sort/"> Learn more </a>
+  </div>
+  </div>
+
+
+  <h1> SHELL  SORT ALGORITHM </h1>
+  <div class = "container-6 container">
+    <div class="item-shell1 item" id = "col1">
+      <!-- <p class = "merge-button"> Method:  -->
+        <button onClick="create(this)" id="shellsort">Create chart </button>
+        <button onClick="sort(this)" id="shellsort"> Sort </button>
+      <!-- </p>
+      <p class = "merge-select">How many items that you aim : -->
+        <select id = "select6A">   
+          <option value="10"> 10 items</option>
+          <option value="20"> 20 items</option>
+          <option value="30"> 30 items</option>
+      </select>
+    <!-- </p>
+    <p > Please chose speed  -->
+      <select id = "select6B">   
+        <option value="500"> 1x </option>
+        <option value="100"> 2x </option>
+        <option value="40"> 3x </option>
+    </select>
+  <!-- </p> -->
+  <div id = "BigO"> 
+    <h3 id = "Big0Shell">Numbers of swaps: .................................................................. Numbers of comparisions: ............................................................</h3>
+  </div>
+    <canvas id = "myCanvasShell" width="700" height="700"></canvas>
+    <!-- <script src="js/scriptM.js"></script> -->
+  </div>
+  <div class = "item-shell2 item" id = "col2"> 
+    <h2 id = "Tieude">Description</h2>
+    <h2 id = "Content">
+      The shell sort, sometimes called the “diminishing increment sort,”
+      improves on the insertion sort by breaking the original list into a number of smaller sublists, each of which is sorted using an insertion sort.
+    </h2>
+    <h2 id = "Content">
+      Time Complexity: O (N<sup>3/2</sup>)
+    </h2>
+    <a href="https://www.geeksforgeeks.org/shellsort/"> Learn more </a>
+  </div>
+  </div>
+
+  <script src="js/scriptmain.js"></script>
+  
+</body>
+ 
+</html> 
